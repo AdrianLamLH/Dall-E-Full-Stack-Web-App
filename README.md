@@ -3,19 +3,31 @@
 ## Description
 
 This image-gen platform provides a web app built on a MERN stack that dynamically creates, hosts, and displays AI-generated images using OpenAIs text-to-image model Dall-E-2.
+Backend hosted on Render, and frontend hosted on Vercel.
 
-## Running the Application
-#### Ensure Vite is installed (You can find the link here: https://vitejs.dev/)
+## How to use
 
-Clone the Repository:
+Open [link](https://tinyurl.com/yw9am72f) to Vercel hosted Web App (given active deployment status):
+1. Users can search through gallery of previous posts
+2. Users can generate their own posts on the create page
 
+    i. Subsequently, users can share their creations to the gallery
+
+    ii. Each submission is labelled, and indexed by name & post prompt
+4. Users can download any images from the gallery 
+
+
+## Running the Application locally
+#### Ensure [Vite](https://vitejs.dev/) is installed
+
+Clone the Repository:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(Use this commit: 0d5a4b1963e3149fcc210a0eca70fe80148fedad)*
 ##### `git clone https://github.com/AdrianLamLH/Dall-E-Full-Stack-Web-App.git DALL_E_APP`
 
 ##### `cd DALL_E_APP`
 
 ##### `npm install`
 
-### To run the Frontend (React):
+### To run the Frontend (ReactJS):
 
 ##### `cd client`
 
@@ -30,7 +42,7 @@ The app should be accessible at
 
 ##### `cd server`
 
-##### Create a .env file in the server folder. Add your mongodb, openai, and cloudinary keys to the .env file (which can be created at https://cloud.mongodb.com/, https://openai.com/blog/openai-api, https://cloudinary.com/) like the following:
+##### Create a .env file in the server folder. Add your [mongodb](https://cloud.mongodb.com/), [openai](https://openai.com/blog/openai-api), and [cloudinary](https://cloudinary.com/) keys to the .env file like the following:
 `MONGO_DB_URL=<YOUR_MONGO_DB_URL_HERE>`
 `OPENAI_API_KEY=<YOUR_OPENAI_API_KEY_HERE>`
 `CLOUDINARY_CLOUD_NAME=<YOUR_CLOUDINARY_CLOUD_NAME_HERE>`
